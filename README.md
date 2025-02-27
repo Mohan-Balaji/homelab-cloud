@@ -1,1 +1,43 @@
-# homelab-cloud
+# Homelab Cloud Storage with TrueNAS & Cloudflare  
+
+## 📌 Overview  
+This project is a **self-hosted cloud storage solution** using **TrueNAS** on a repurposed machine, accessible securely from anywhere via **Cloudflare Tunnel**. It provides a cost-effective, secure, and scalable alternative to cloud storage services.  
+
+## 🔧 Tech Stack  
+- **TrueNAS** – For storage management  
+- **Cloudflare Tunnel** – Secure remote access without exposing ports  
+- **File Browser** – Web-based file management UI  
+- **Custom Domain (Namecheap Students)** – Easy access via a personalized domain  
+- **Intel i3 3rd Gen (Old Device)** – Optimized to run TrueNAS on bare metal  
+
+## 🚀 Features  
+✅ **Secure Remote Access** – No open ports, fully protected via Cloudflare  
+✅ **Efficient Storage Management** – TrueNAS pools & datasets for structured storage  
+✅ **Web-Based File Management** – Simple UI with File Browser  
+✅ **Custom Domain Integration** – Seamless access using a free domain  
+✅ **Low-Cost Self-Hosted Solution** – Uses repurposed hardware  
+
+## 🛠️ Setup Guide  
+
+### 1️⃣ Install TrueNAS on Bare Metal  
+- Download [TrueNAS](https://www.truenas.com/download-truenas-core/)  
+- Flash it to a USB using **Rufus**  
+- Boot from USB and install TrueNAS  
+
+### 2️⃣ Configure Storage  
+- Set up **Storage Pools & Datasets**  
+- Assign storage paths  
+
+### 3️⃣ Install File Browser  
+- Run `docker run -d -p 8080:80 filebrowser/filebrowser`  
+- Access at `http://your-server-ip:8080`  
+
+### 4️⃣ Secure Remote Access with Cloudflare Tunnel  
+- Create a Cloudflare account  
+- Install the **Cloudflare Tunnel** client  
+- Run:  
+  ```bash
+  cloudflared tunnel login  
+  cloudflared tunnel create my-tunnel  
+  cloudflared tunnel route dns my-tunnel yourdomain.com  
+  cloudflared tunnel run my-tunnel  
