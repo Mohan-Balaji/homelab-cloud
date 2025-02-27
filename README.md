@@ -10,6 +10,7 @@ This project is a **self-hosted cloud storage solution** using **TrueNAS** on a 
 - **Custom Domain (Namecheap Students)** – Easy access via a personalized domain  
 - **Intel i3 3rd Gen (Old Device)** – Optimized to run TrueNAS on bare metal  
 
+
 ## 🚀 Features  
 ✅ **Secure Remote Access** – No open ports, fully protected via Cloudflare  
 ✅ **Efficient Storage Management** – TrueNAS pools & datasets for structured storage  
