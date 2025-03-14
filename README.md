@@ -18,6 +18,10 @@ This project is a **self-hosted cloud storage solution** using **TrueNAS** on a 
 ✅ **Custom Domain Integration** – Seamless access using a free domain  
 ✅ **Low-Cost Self-Hosted Solution** – Uses repurposed hardware  
 
+## 🛠️ Architecture Diagram
+
+![Infrastructure diagram](https://github.com/user-attachments/assets/d5e47a6f-2615-4edc-ac51-1ea420c8f2e9)
+
 ## 🛠️ Setup Guide  
 
 ### 1️⃣ Install TrueNAS on Bare Metal  
