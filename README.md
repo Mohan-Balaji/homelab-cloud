@@ -31,7 +31,10 @@ This project is a **self-hosted cloud storage solution** using **TrueNAS** on a 
 
 ### 3️⃣ Install File Browser  
 - Run `docker run -d -p 8080:80 filebrowser/filebrowser`  
-- Access at `http://your-server-ip:8080`  
+- Access at `http://your-server-ip:8080`
+
+### 3️⃣ Install NextCloud (Similar to Google Drive)
+- Run `$ docker run -d -p 8080:80 nextcloud`  
 
 ### 4️⃣ Secure Remote Access with Cloudflare Tunnel  
 - Create a Cloudflare account  
