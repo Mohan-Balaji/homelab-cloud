@@ -1,6 +1,6 @@
 # Homelab Cloud Storage with TrueNAS & Cloudflare  
 
-**https://www.mohanbalaji.vercel.app/Homelab_Cloud_Storage**
+**https://mohanbalaji.vercel.app/Homelab_Cloud_Storage**
 
 ## 📌 Overview  
 This project is a **self-hosted cloud storage solution** using **TrueNAS** on a repurposed machine, accessible securely from anywhere via **Cloudflare Tunnel**. It provides a cost-effective, secure, and scalable alternative to cloud storage services.  
